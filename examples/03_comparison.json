@@ -1,0 +1,932 @@
+{
+  "request": {
+    "planner": "auto",
+    "max_citations_per_datum": 5,
+    "query": "Compare sponsor categories across two conditions: psoriasis and asthma."
+  },
+  "status_code": 200,
+  "response": {
+    "visualization": {
+      "type": "grouped_bar_chart",
+      "title": "Number of trials by sponsor class: psoriasis vs asthma",
+      "subtitle": "I will compare the number of trials by sponsor class for two separate cohorts: those studying psoriasis and those studying asthma.",
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "title": "Sponsor class"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Number of trials",
+          "unit": "trials"
+        },
+        "series": {
+          "field": "series",
+          "type": "nominal",
+          "title": "Cohort"
+        },
+        "tooltip": [
+          "series",
+          "category",
+          "value",
+          "citation_count"
+        ]
+      },
+      "data": [
+        {
+          "citations": [
+            {
+              "nct_id": "NCT02813720",
+              "title": "Distal Erosions and Nail Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT02813720",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03265613",
+              "title": "Safety and Efficacy of Expanded Allogeneic AD-MSCs in Patients With Moderate to Severe Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT03265613",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02065713",
+              "title": "Efficacy of Golimumab in Combination With Methotrexate (MTX) Versus MTX Monotherapy, in Improving Dactylitis, in MTX naïve Psoriatic Arthritis Patients",
+              "url": "https://clinicaltrials.gov/study/NCT02065713",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00477191",
+              "title": "Effects of TNF-alpha Antagonism (Etanercept) in Patients With the Metabolic Syndrome and Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT00477191",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04673825",
+              "title": "Monitoring Spondyloarthritis With SpA-Net",
+              "url": "https://clinicaltrials.gov/study/NCT04673825",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            }
+          ],
+          "citation_count": 759,
+          "citations_truncated": true,
+          "category": "OTHER",
+          "series": "psoriasis",
+          "value": 759.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT01782924",
+              "title": "A Phase 3 Clinical Study of KHK4827",
+              "url": "https://clinicaltrials.gov/study/NCT01782924",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00534313",
+              "title": "Safety and Efficacy of Abatacept Versus Placebo in Participants With Psoriatic Arthritis",
+              "url": "https://clinicaltrials.gov/study/NCT00534313",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07219420",
+              "title": "A Study to Evaluate the Efficacy and Safety of Bimekizumab in Study Participants With Palmoplantar Pustulosis",
+              "url": "https://clinicaltrials.gov/study/NCT07219420",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02513550",
+              "title": "A Study Comparing Different Dosing Regimens of Ixekizumab (LY2439821) in Participants With Moderate to Severe Plaque Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT02513550",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00249808",
+              "title": "A Study of Efalizumab in Participants With Moderate to Severe Chronic Psoriasis Who Have Failed, Have a Contraindication to, or Are Intolerant of Other Systemic Therapies",
+              "url": "https://clinicaltrials.gov/study/NCT00249808",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            }
+          ],
+          "citation_count": 1176,
+          "citations_truncated": true,
+          "category": "INDUSTRY",
+          "series": "psoriasis",
+          "value": 1176.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT00341809",
+              "title": "Genetic Analysis of Psoriasis and Psoriatic Arthritis",
+              "url": "https://clinicaltrials.gov/study/NCT00341809",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03816345",
+              "title": "Testing an Immunotherapy Anti-cancer Drug, Nivolumab, for Advanced Cancers in Patients With Autoimmune Disorders, AIM-NIVO",
+              "url": "https://clinicaltrials.gov/study/NCT03816345",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04728165",
+              "title": "Anti-Inflammatory Effects of Time-Restricted Feeding",
+              "url": "https://clinicaltrials.gov/study/NCT04728165",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00001797",
+              "title": "Randomized Double-Blind Placebo-Controlled Trial Using Recombinant Human Interleukin-10 for Moderate-to-Severe Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT00001797",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00239720",
+              "title": "PsA Treatment With hOKT3γ1 (Ala-Ala)",
+              "url": "https://clinicaltrials.gov/study/NCT00239720",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            }
+          ],
+          "citation_count": 17,
+          "citations_truncated": true,
+          "category": "NIH",
+          "series": "psoriasis",
+          "value": 17.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT07261306",
+              "title": "Comparison Between Oral Methotrexate and Tofacitinib in Chronic Plaque Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT07261306",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01006681",
+              "title": "Vaccination Against Influenza H1N1 in Rheumatic Diseases",
+              "url": "https://clinicaltrials.gov/study/NCT01006681",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00517101",
+              "title": "Presence of IBD Specific Antibodies (ASCA, ALCA, ACCA, AMCA) in the Sera of Patients With Spondyloarthropathy",
+              "url": "https://clinicaltrials.gov/study/NCT00517101",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07626697",
+              "title": "Dermoscopy and UVFD in Differentiating Palmoplantar Psoriasis and Palmoplantar Eczema",
+              "url": "https://clinicaltrials.gov/study/NCT07626697",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01121081",
+              "title": "The Effect of Algae Dunaliella Bardawil on Psoriasis (2)",
+              "url": "https://clinicaltrials.gov/study/NCT01121081",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            }
+          ],
+          "citation_count": 29,
+          "citations_truncated": true,
+          "category": "OTHER_GOV",
+          "series": "psoriasis",
+          "value": 29.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT05925842",
+              "title": "Clinical and Molecular Characterization of Axial Psoriatic Arthritis (PsA), A Pilot Study",
+              "url": "https://clinicaltrials.gov/study/NCT05925842",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02707341",
+              "title": "The CorEvitas Psoriasis (PSO) Registry",
+              "url": "https://clinicaltrials.gov/study/NCT02707341",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06042647",
+              "title": "Anti-Inflammatory Effects of 0.045% Tazarotene/0.01% Halobetasol Lotion in Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT06042647",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06100991",
+              "title": "CorEvitas Generalized Pustular Psoriasis (GPP) Drug Safety and Effectiveness Registry",
+              "url": "https://clinicaltrials.gov/study/NCT06100991",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00510536",
+              "title": "Treatment of Mild to Moderate Joint Pain in Patients With Chronic Plaque Psoriasis Receiving Efalizumab",
+              "url": "https://clinicaltrials.gov/study/NCT00510536",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            }
+          ],
+          "citation_count": 13,
+          "citations_truncated": true,
+          "category": "NETWORK",
+          "series": "psoriasis",
+          "value": 13.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT00470392",
+              "title": "Mechanistically-based Optimization of UV Radiation Therapy in Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT00470392",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "FED"
+                }
+              ]
+            }
+          ],
+          "citation_count": 1,
+          "citations_truncated": false,
+          "category": "FED",
+          "series": "psoriasis",
+          "value": 1.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT01587755",
+              "title": "Optimising Outpatient Care in Mild to Moderate Psoriasis (PSO-TOP)",
+              "url": "https://clinicaltrials.gov/study/NCT01587755",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDIV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02193919",
+              "title": "A Single-Center, Prospective, Pilot Study to Compare the Effect of Diet in Overweight or Obese Patients With Psoriasis on Light Therapy",
+              "url": "https://clinicaltrials.gov/study/NCT02193919",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDIV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01558310",
+              "title": "A Study to Evaluate the Effectiveness of STELARA ™ (USTEKINUMAB) in the Treatment of Scalp Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT01558310",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDIV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01404338",
+              "title": "Assessment for Tachyphylaxis to Topical Corticosteroids in the Treatment of Psoriasis",
+              "url": "https://clinicaltrials.gov/study/NCT01404338",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDIV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00537212",
+              "title": "Study of the Effect of Diet in Overweight or Obese Patients With Psoriasis on Light Therapy",
+              "url": "https://clinicaltrials.gov/study/NCT00537212",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDIV"
+                }
+              ]
+            }
+          ],
+          "citation_count": 5,
+          "citations_truncated": false,
+          "category": "INDIV",
+          "series": "psoriasis",
+          "value": 5.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT04462224",
+              "title": "Creation of Home-based Asthma Real-World Measures With Mobile Health Study",
+              "url": "https://clinicaltrials.gov/study/NCT04462224",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05140889",
+              "title": "Integrating Deep Learning CT-scan Model, Biological and Clinical Variables to Predict Severity of Asthma in Children",
+              "url": "https://clinicaltrials.gov/study/NCT05140889",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00922350",
+              "title": "Heliox and Posture in Patients With Asthma",
+              "url": "https://clinicaltrials.gov/study/NCT00922350",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04301674",
+              "title": "Metabolomics in Occupational Asthma",
+              "url": "https://clinicaltrials.gov/study/NCT04301674",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07046117",
+              "title": "Effect of Tezepelumab on Barrier Function in Severe Asthmatic Patients With and Without Comorbid Chronic Rhinosinusitis With Nasal Polyps",
+              "url": "https://clinicaltrials.gov/study/NCT07046117",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER"
+                }
+              ]
+            }
+          ],
+          "citation_count": 1156,
+          "citations_truncated": true,
+          "category": "OTHER",
+          "series": "asthma",
+          "value": 1156.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT04656223",
+              "title": "Digital Adherence Monitoring of Inhalative Therapy in Real- Life Conditions",
+              "url": "https://clinicaltrials.gov/study/NCT04656223",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01743768",
+              "title": "Safety, Efficacy, PK, and PD Characteristics of Orally Inhaled SB010 in Male Patients With Mild Asthma (Multiple Dose)",
+              "url": "https://clinicaltrials.gov/study/NCT01743768",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00482508",
+              "title": "Safety and Tolerability of Omalizumab in Poorly Controlled Moderate to Severe Asthma Patients",
+              "url": "https://clinicaltrials.gov/study/NCT00482508",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01629849",
+              "title": "Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of Multiple Rising Oral Doses of BI 1021958 in Otherwise Healthy Controlled Asthmatic Subjects",
+              "url": "https://clinicaltrials.gov/study/NCT01629849",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01725685",
+              "title": "To Investigate the Pharmacokinetics and Safety of Fluticasone Furoate (FF)/ Umeclidinium (UMEC) Combination Compared With FF and UMEC Monotherapies in Adult Healthy Volunteers Using a Dry Powder Inhaler (DPI)",
+              "url": "https://clinicaltrials.gov/study/NCT01725685",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDUSTRY"
+                }
+              ]
+            }
+          ],
+          "citation_count": 721,
+          "citations_truncated": true,
+          "category": "INDUSTRY",
+          "series": "asthma",
+          "value": 721.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT00005523",
+              "title": "Home Based Environmental Adherence Trial",
+              "url": "https://clinicaltrials.gov/study/NCT00005523",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00635271",
+              "title": "Biomarkers in Exhaled Breath From Asthmatic Patients",
+              "url": "https://clinicaltrials.gov/study/NCT00635271",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00005484",
+              "title": "Predictors of Hospital-Based Care in Asthma",
+              "url": "https://clinicaltrials.gov/study/NCT00005484",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00339521",
+              "title": "Genetic Susceptibility to Childhood Respiratory IIlness in Mexico City",
+              "url": "https://clinicaltrials.gov/study/NCT00339521",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02471300",
+              "title": "Effect of Fasting on the Asthma Inflammasome",
+              "url": "https://clinicaltrials.gov/study/NCT02471300",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NIH"
+                }
+              ]
+            }
+          ],
+          "citation_count": 70,
+          "citations_truncated": true,
+          "category": "NIH",
+          "series": "asthma",
+          "value": 70.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT05469555",
+              "title": "Azithromycin and Oesophageal Function in Respiratory Disease",
+              "url": "https://clinicaltrials.gov/study/NCT05469555",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02255136",
+              "title": "Efficacy Study of Homeopathic Medicines in Treatment of Allergic Rhinitis and/or Induced Bronchial Asthma",
+              "url": "https://clinicaltrials.gov/study/NCT02255136",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02083029",
+              "title": "Vagal Nerve Stimulation Assessed by the Diving Reflex: An Investigation Into Mechanisms of Asthma Death",
+              "url": "https://clinicaltrials.gov/study/NCT02083029",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03645889",
+              "title": "Traditional Chinese Medicine in Management of Childhood Asthma",
+              "url": "https://clinicaltrials.gov/study/NCT03645889",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05724745",
+              "title": "Evaluation of 3D Magnetic Resonance Spirometry: Comparison with Spirometry in Healthy Subjects and Patients with Respiratory Pathologies (asthma, COPD, Bilateral Lung Transplant)",
+              "url": "https://clinicaltrials.gov/study/NCT05724745",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "OTHER_GOV"
+                }
+              ]
+            }
+          ],
+          "citation_count": 30,
+          "citations_truncated": true,
+          "category": "OTHER_GOV",
+          "series": "asthma",
+          "value": 30.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT06938022",
+              "title": "Respiratory Microbiota, Infection Characteristics and Imaging Manifestations in Patients With Chronic Airway Inflammation",
+              "url": "https://clinicaltrials.gov/study/NCT06938022",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05974917",
+              "title": "Serious gaMes as Emerging E-health Interventions for Young People With neurologicaL or rEspiratory disoRders",
+              "url": "https://clinicaltrials.gov/study/NCT05974917",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07313904",
+              "title": "Effects of Environmental Fungal Exposure on Bronchial Asthma, ABPA and Bronchiectasis",
+              "url": "https://clinicaltrials.gov/study/NCT07313904",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06034145",
+              "title": "Methacholine Challenge Testing: Comparison of FEV1 and IOS Parameters in Adult Asthma Patients",
+              "url": "https://clinicaltrials.gov/study/NCT06034145",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06732141",
+              "title": "Remote Anxiety Management for ICS-resistant Asthma Study",
+              "url": "https://clinicaltrials.gov/study/NCT06732141",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "NETWORK"
+                }
+              ]
+            }
+          ],
+          "citation_count": 15,
+          "citations_truncated": true,
+          "category": "NETWORK",
+          "series": "asthma",
+          "value": 15.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT01043133",
+              "title": "Study of Medical Student Use of Templates to Document Outpatient Asthma Care in Electronic Medical Record",
+              "url": "https://clinicaltrials.gov/study/NCT01043133",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "FED"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06366087",
+              "title": "Sublingual Atropine Bioequivalence by Route of Administration (SABER)",
+              "url": "https://clinicaltrials.gov/study/NCT06366087",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "FED"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01522144",
+              "title": "An Electronic Decision Support Tool to Improve Outpatient Asthma Care",
+              "url": "https://clinicaltrials.gov/study/NCT01522144",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "FED"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00660322",
+              "title": "Using the Telephone to Improve Care in Childhood Asthma",
+              "url": "https://clinicaltrials.gov/study/NCT00660322",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "FED"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00753948",
+              "title": "Exhaled Levels of Nitric Oxide",
+              "url": "https://clinicaltrials.gov/study/NCT00753948",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "FED"
+                }
+              ]
+            }
+          ],
+          "citation_count": 7,
+          "citations_truncated": true,
+          "category": "FED",
+          "series": "asthma",
+          "value": 7.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT01397760",
+              "title": "Retrospective Study for Description of The Use Of Omalizumab In Patients With Difficult To Control Asthma",
+              "url": "https://clinicaltrials.gov/study/NCT01397760",
+              "evidence": [
+                {
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+                  "excerpt": "INDIV"
+                }
+              ]
+            }
+          ],
+          "citation_count": 1,
+          "citations_truncated": false,
+          "category": "INDIV",
+          "series": "asthma",
+          "value": 1.0
+        }
+      ],
+      "config": {
+        "measure": "trial_count",
+        "unit": "trials",
+        "sort": "natural",
+        "dimension": "sponsor_class",
+        "grouping": "side_by_side",
+        "series_order": [
+          "psoriasis",
+          "asthma"
+        ],
+        "top_n": null
+      }
+    },
+    "meta": {
+      "intent": "comparison",
+      "planner_used": "llm",
+      "llm_model": "gpt-4.1",
+      "plan": {
+        "analysis": "comparison",
+        "cohorts": [
+          {
+            "label": "psoriasis",
+            "filters": {
+              "condition": "psoriasis"
+            }
+          },
+          {
+            "label": "asthma",
+            "filters": {
+              "condition": "asthma"
+            }
+          }
+        ],
+        "dimension": "sponsor_class",
+        "measure": "trial_count",
+        "time_field": "start_date",
+        "granularity": "year",
+        "sort": "natural",
+        "interpretation": "I will compare the number of trials by sponsor class for two separate cohorts: those studying psoriasis and those studying asthma."
+      },
+      "cohorts": [
+        {
+          "label": "psoriasis",
+          "filters_applied": {
+            "condition": "psoriasis"
+          },
+          "total_matched": 2560,
+          "trials_analyzed": 2000,
+          "truncated": true,
+          "api_requests": [
+            "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=1000&countTotal=true&fields=NCTId%2CBriefTitle%2COverallStatus%2CStartDate%2CPrimaryCompletionDate%2CCompletionDate%2CStudyFirstPostDate%2CPhase%2CStudyType%2CDesignAllocation%2CDesignPrimaryPurpose%2CEnrollmentCount%2CEnrollmentType%2CLeadSponsorName%2CLeadSponsorClass%2CCollaboratorName%2CCollaboratorClass%2CCondition%2CConditionMeshTerm%2CInterventionName%2CInterventionType%2CInterventionMeshTerm%2CLocationCountry%2CLocationFacility%2CLocationCity%2COverallOfficialName%2COverallOfficialAffiliation%2CSex&query.cond=psoriasis",
+            "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=1000&countTotal=true&fields=NCTId%2CBriefTitle%2COverallStatus%2CStartDate%2CPrimaryCompletionDate%2CCompletionDate%2CStudyFirstPostDate%2CPhase%2CStudyType%2CDesignAllocation%2CDesignPrimaryPurpose%2CEnrollmentCount%2CEnrollmentType%2CLeadSponsorName%2CLeadSponsorClass%2CCollaboratorName%2CCollaboratorClass%2CCondition%2CConditionMeshTerm%2CInterventionName%2CInterventionType%2CInterventionMeshTerm%2CLocationCountry%2CLocationFacility%2CLocationCity%2COverallOfficialName%2COverallOfficialAffiliation%2CSex&query.cond=psoriasis&pageToken=ZVNj7o2Elu8o3lpwS9785unumpOQJJxuY_Kh3fMYkA"
+          ]
+        },
+        {
+          "label": "asthma",
+          "filters_applied": {
+            "condition": "asthma"
+          },
+          "total_matched": 5295,
+          "trials_analyzed": 2000,
+          "truncated": true,
+          "api_requests": [
+            "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=1000&countTotal=true&fields=NCTId%2CBriefTitle%2COverallStatus%2CStartDate%2CPrimaryCompletionDate%2CCompletionDate%2CStudyFirstPostDate%2CPhase%2CStudyType%2CDesignAllocation%2CDesignPrimaryPurpose%2CEnrollmentCount%2CEnrollmentType%2CLeadSponsorName%2CLeadSponsorClass%2CCollaboratorName%2CCollaboratorClass%2CCondition%2CConditionMeshTerm%2CInterventionName%2CInterventionType%2CInterventionMeshTerm%2CLocationCountry%2CLocationFacility%2CLocationCity%2COverallOfficialName%2COverallOfficialAffiliation%2CSex&query.cond=asthma",
+            "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=1000&countTotal=true&fields=NCTId%2CBriefTitle%2COverallStatus%2CStartDate%2CPrimaryCompletionDate%2CCompletionDate%2CStudyFirstPostDate%2CPhase%2CStudyType%2CDesignAllocation%2CDesignPrimaryPurpose%2CEnrollmentCount%2CEnrollmentType%2CLeadSponsorName%2CLeadSponsorClass%2CCollaboratorName%2CCollaboratorClass%2CCondition%2CConditionMeshTerm%2CInterventionName%2CInterventionType%2CInterventionMeshTerm%2CLocationCountry%2CLocationFacility%2CLocationCity%2COverallOfficialName%2COverallOfficialAffiliation%2CSex&query.cond=asthma&pageToken=ZVNj7o2Elu8o3lpwS9785unumpOQJJxnZfih2_QW"
+          ]
+        }
+      ],
+      "trials_analyzed": 4000,
+      "notes": [],
+      "warnings": [
+        "Cohort 'psoriasis': 2560 studies match but only the first 2000 were analysed (max_trials). Raise max_trials for complete coverage.",
+        "Cohort 'asthma': 5295 studies match but only the first 2000 were analysed (max_trials). Raise max_trials for complete coverage."
+      ],
+      "source": "clinicaltrials.gov",
+      "source_api": "https://clinicaltrials.gov/api/v2/studies",
+      "generated_at": "2026-10-07T08:23:52.166908Z",
+      "timing_ms": {
+        "planning": 2682,
+        "fetch": 1789,
+        "aggregate": 137,
+        "total": 4609
+      }
+    }
+  }
+}

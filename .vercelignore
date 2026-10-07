@@ -1,0 +1,7 @@
+.venv
+tests
+examples
+demo/*.webm
+demo/*.mp4
+demo/*.gif
+.env

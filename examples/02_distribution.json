@@ -1,0 +1,668 @@
+{
+  "request": {
+    "planner": "auto",
+    "max_citations_per_datum": 5,
+    "query": "How are lupus trials distributed across phases?"
+  },
+  "status_code": 200,
+  "response": {
+    "visualization": {
+      "type": "bar_chart",
+      "title": "Trials by phase for lupus",
+      "subtitle": "I will count lupus trials and show their distribution by trial phase, using 'lupus' as the condition filter.",
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "title": "Phase"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Number of trials",
+          "unit": "trials"
+        },
+        "tooltip": [
+          "category",
+          "value",
+          "citation_count"
+        ]
+      },
+      "data": [
+        {
+          "citations": [
+            {
+              "nct_id": "NCT06866080",
+              "title": "A Study of LCAR-AIO in Subjects With Relapsed/Refractory Autoimmune Diseases",
+              "url": "https://clinicaltrials.gov/study/NCT06866080",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"EARLY_PHASE1\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04839315",
+              "title": "COVID-19 Vaccination in Rheumatic Disease Patients",
+              "url": "https://clinicaltrials.gov/study/NCT04839315",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"EARLY_PHASE1\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06661213",
+              "title": "Tapinarof for Cutaneous Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT06661213",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"EARLY_PHASE1\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07535138",
+              "title": "Efficacy and Safety of CD19 CAR-γδ T Cells in the Treatment of Relapsed/Refractory Autoimmune Nephropathy",
+              "url": "https://clinicaltrials.gov/study/NCT07535138",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"EARLY_PHASE1\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05085418",
+              "title": "A Study of CD19/BCMA Chimeric Antigen Receptor T Cells Therapy for Patients With Refractory Immune Nephritis",
+              "url": "https://clinicaltrials.gov/study/NCT05085418",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"EARLY_PHASE1\"]"
+                }
+              ]
+            }
+          ],
+          "citation_count": 64,
+          "citations_truncated": true,
+          "category": "Early Phase 1",
+          "series": null,
+          "value": 64.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT07403097",
+              "title": "Study of CD19 CAR-T Therapy for Refractory SLE",
+              "url": "https://clinicaltrials.gov/study/NCT07403097",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05048238",
+              "title": "Evaluation of Tofacitinib in Prevention of Photosensitivity in Lupus",
+              "url": "https://clinicaltrials.gov/study/NCT05048238",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05001698",
+              "title": "Anifrolumab PK Study for Systemic Lupus Erythematosus (SLE)",
+              "url": "https://clinicaltrials.gov/study/NCT05001698",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02411136",
+              "title": "A Study to Examine the Safety, Pharmacokinetics and Pharmacodynamics of AMG 623 in Subjects With Systemic Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT02411136",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06916806",
+              "title": "A Study to Investigate Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of AZD5492 in Adult Participants With Systemic Lupus Erythematosus or Idiopathic Inflammatory Myopathies or Rheumatoid Arthritis.",
+              "url": "https://clinicaltrials.gov/study/NCT06916806",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\"]"
+                }
+              ]
+            }
+          ],
+          "citation_count": 257,
+          "citations_truncated": true,
+          "category": "Phase 1",
+          "series": null,
+          "value": 257.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT06535412",
+              "title": "A Study of IMC-002 for the Treatment of Active Systemic Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT06535412",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\", \"PHASE2\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07044115",
+              "title": "Evaluation of the Tolerance, Safety, Pharmacokinetics, Pharmacodynamics, and Efficacy of MIL62 Injection for Treating Lupus Nephritis",
+              "url": "https://clinicaltrials.gov/study/NCT07044115",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\", \"PHASE2\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02320357",
+              "title": "Pilot Study Related to the Effect of Clopidogrel on Plasmatic Soluble CD40 Ligand During Systemic Lupus Erythematous",
+              "url": "https://clinicaltrials.gov/study/NCT02320357",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\", \"PHASE2\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01741857",
+              "title": "Umbilical Cord Derived Mesenchymal Stem Cells Transplantation for Active and Refractory Systemic Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT01741857",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\", \"PHASE2\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07799116",
+              "title": "Study to Evaluate the Safety and Preliminary Efficacy of CD19 CAR-T Cell Therapy (TranspoCART19) in Patients With Refractory Lupus Nephritis",
+              "url": "https://clinicaltrials.gov/study/NCT07799116",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE1\", \"PHASE2\"]"
+                }
+              ]
+            }
+          ],
+          "citation_count": 89,
+          "citations_truncated": true,
+          "category": "Phase 1/Phase 2",
+          "series": null,
+          "value": 89.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT01085097",
+              "title": "A Study of Laquinimod in Participants With Systemic Lupus Erythematosus (SLE) Active Lupus Nephritis",
+              "url": "https://clinicaltrials.gov/study/NCT01085097",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01273389",
+              "title": "An Efficacy and Safety Study of CNTO 136 in Patients With Active Lupus Nephritis",
+              "url": "https://clinicaltrials.gov/study/NCT01273389",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07328581",
+              "title": "A Phase IIa Study of ICG318 CAR-T in Refractory Systemic Lupus Erythematosus With or Without Lupus Nephritis",
+              "url": "https://clinicaltrials.gov/study/NCT07328581",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06794008",
+              "title": "BCMA-CD19 CAR-T Therapy for Refractory Autoimmune Diseases",
+              "url": "https://clinicaltrials.gov/study/NCT06794008",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04433585",
+              "title": "A Study of LY3471851 in Adults With Systemic Lupus Erythematosus (SLE)",
+              "url": "https://clinicaltrials.gov/study/NCT04433585",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\"]"
+                }
+              ]
+            }
+          ],
+          "citation_count": 272,
+          "citations_truncated": true,
+          "category": "Phase 2",
+          "series": null,
+          "value": 272.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT04870333",
+              "title": "PROphylaxis for paTiEnts at Risk of COVID-19 infecTion -V",
+              "url": "https://clinicaltrials.gov/study/NCT04870333",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\", \"PHASE3\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01646736",
+              "title": "Efficacy and Safety of Tripterygium Wilfordii in Patients With Lupus Nephritis",
+              "url": "https://clinicaltrials.gov/study/NCT01646736",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\", \"PHASE3\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00430677",
+              "title": "Efficacy and Safety Study of Abatacept to Treat Lupus Nephritis",
+              "url": "https://clinicaltrials.gov/study/NCT00430677",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\", \"PHASE3\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03178188",
+              "title": "Efficacy of 595 nm Pulsed-dye Laser in Treatment of Discoid Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT03178188",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\", \"PHASE3\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05791799",
+              "title": "Etonogestrel Implants Protect Ovarian Reserve Function in Systemic Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT05791799",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE2\", \"PHASE3\"]"
+                }
+              ]
+            }
+          ],
+          "citation_count": 27,
+          "citations_truncated": true,
+          "category": "Phase 2/Phase 3",
+          "series": null,
+          "value": 27.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT05306574",
+              "title": "A Study of Telitacicept for the Treatment of Moderately to Severely Active Systemic Lupus Erythematosus (REMESLE-1)",
+              "url": "https://clinicaltrials.gov/study/NCT05306574",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE3\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01408576",
+              "title": "Open Label Extension Study of Epratuzumab in Subjects With Systemic Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT01408576",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE3\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01395745",
+              "title": "CHABLIS-SC1: A Study of the Efficacy and Safety of Subcutaneous Blisibimod in Subjects With Systemic Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT01395745",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE3\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05843643",
+              "title": "Program to Assess Adverse Events and Change in Disease Activity of Oral Upadacitinib in Adult Participants With Moderate to Severe Systemic Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT05843643",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE3\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00724867",
+              "title": "A Continuation Trial for Subjects With Lupus Who Completed Protocol HGS1006-C1056 in the United States",
+              "url": "https://clinicaltrials.gov/study/NCT00724867",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE3\"]"
+                }
+              ]
+            }
+          ],
+          "citation_count": 146,
+          "citations_truncated": true,
+          "category": "Phase 3",
+          "series": null,
+          "value": 146.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT00371319",
+              "title": "Comparing the Efficacy of Tacrolimus and Mycophenolate Mofetil for the Initial Therapy of Active Lupus Nephritis",
+              "url": "https://clinicaltrials.gov/study/NCT00371319",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE4\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06677801",
+              "title": "Immune Cell Subsets in SLE Patients Treated with Telitacicept",
+              "url": "https://clinicaltrials.gov/study/NCT06677801",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE4\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00911521",
+              "title": "Immunogenicity and Safety of a Quadrivalent Human Papillomavirus (HPV) Vaccine in Patients With SLE: a Controlled Study",
+              "url": "https://clinicaltrials.gov/study/NCT00911521",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE4\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01151644",
+              "title": "Safety and Efficacy of Anti-Pandemic H1N1 Vaccination in Rheumatic Diseases",
+              "url": "https://clinicaltrials.gov/study/NCT01151644",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE4\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00508898",
+              "title": "The Efficacy and Safety of Calcitriol for the Treatment of Lupus Nephritis and Persistent Proteinuria",
+              "url": "https://clinicaltrials.gov/study/NCT00508898",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"PHASE4\"]"
+                }
+              ]
+            }
+          ],
+          "citation_count": 87,
+          "citations_truncated": true,
+          "category": "Phase 4",
+          "series": null,
+          "value": 87.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT03664908",
+              "title": "Detection of Anti-glomerular Basement Membrane Antibodies (Anti-GBM): a Promising Biomarker for Lupus Nephritis (LN)?",
+              "url": "https://clinicaltrials.gov/study/NCT03664908",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"NA\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07071220",
+              "title": "Efficacy of Vitamin C Supplementation on Serum IL-6 Levels and Disease Activity in Systemic Lupus Erythematosus Patients",
+              "url": "https://clinicaltrials.gov/study/NCT07071220",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"NA\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06232304",
+              "title": "Transforming Care for Individuals With Childhood-onset Systemic Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT06232304",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"NA\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05260255",
+              "title": "Effect of Vitamin D Supplement on Disease Activity in SLE",
+              "url": "https://clinicaltrials.gov/study/NCT05260255",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"NA\"]"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03738826",
+              "title": "Reducing Disparities in Medication Adherence in SLE",
+              "url": "https://clinicaltrials.gov/study/NCT03738826",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "[\"NA\"]"
+                }
+              ]
+            }
+          ],
+          "citation_count": 280,
+          "citations_truncated": true,
+          "category": "Not Applicable",
+          "series": null,
+          "value": 280.0
+        },
+        {
+          "citations": [
+            {
+              "nct_id": "NCT02466217",
+              "title": "Phenomics in Autoimmune and Inflammatory Diseases",
+              "url": "https://clinicaltrials.gov/study/NCT02466217",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "(not reported)"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07267091",
+              "title": "The Burden of Lupus in Canada From a Patient Perspective: A Canadian Real-World PROxy Study",
+              "url": "https://clinicaltrials.gov/study/NCT07267091",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "(not reported)"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03941184",
+              "title": "Spontaneous Coronary Artery Dissection (SCAD) and Autoimmunity",
+              "url": "https://clinicaltrials.gov/study/NCT03941184",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "(not reported)"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04645225",
+              "title": "Clinical Characteristic and MEFV Gene Mutations in Patient With Juvenile Onest Systemic Lupus Erythematosus",
+              "url": "https://clinicaltrials.gov/study/NCT04645225",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "(not reported)"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00691769",
+              "title": "Expression of Fas Protein in Skin Biopsies of Participants With Scarring Alopecia",
+              "url": "https://clinicaltrials.gov/study/NCT00691769",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "excerpt": "(not reported)"
+                }
+              ]
+            }
+          ],
+          "citation_count": 446,
+          "citations_truncated": true,
+          "category": "Not Reported",
+          "series": null,
+          "value": 446.0
+        }
+      ],
+      "config": {
+        "measure": "trial_count",
+        "unit": "trials",
+        "sort": "natural",
+        "dimension": "phase",
+        "orientation": "vertical",
+        "top_n": null
+      }
+    },
+    "meta": {
+      "intent": "distribution",
+      "planner_used": "llm",
+      "llm_model": "gpt-4.1",
+      "plan": {
+        "analysis": "distribution",
+        "cohorts": [
+          {
+            "label": "Lupus trials",
+            "filters": {
+              "condition": "lupus"
+            }
+          }
+        ],
+        "dimension": "phase",
+        "measure": "trial_count",
+        "time_field": "start_date",
+        "granularity": "year",
+        "sort": "natural",
+        "interpretation": "I will count lupus trials and show their distribution by trial phase, using 'lupus' as the condition filter."
+      },
+      "cohorts": [
+        {
+          "label": "Lupus trials",
+          "filters_applied": {
+            "condition": "lupus"
+          },
+          "total_matched": 1668,
+          "trials_analyzed": 1668,
+          "truncated": false,
+          "api_requests": [
+            "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=1000&countTotal=true&fields=NCTId%2CBriefTitle%2COverallStatus%2CStartDate%2CPrimaryCompletionDate%2CCompletionDate%2CStudyFirstPostDate%2CPhase%2CStudyType%2CDesignAllocation%2CDesignPrimaryPurpose%2CEnrollmentCount%2CEnrollmentType%2CLeadSponsorName%2CLeadSponsorClass%2CCollaboratorName%2CCollaboratorClass%2CCondition%2CConditionMeshTerm%2CInterventionName%2CInterventionType%2CInterventionMeshTerm%2CLocationCountry%2CLocationFacility%2CLocationCity%2COverallOfficialName%2COverallOfficialAffiliation%2CSex&query.cond=lupus",
+            "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=1000&countTotal=true&fields=NCTId%2CBriefTitle%2COverallStatus%2CStartDate%2CPrimaryCompletionDate%2CCompletionDate%2CStudyFirstPostDate%2CPhase%2CStudyType%2CDesignAllocation%2CDesignPrimaryPurpose%2CEnrollmentCount%2CEnrollmentType%2CLeadSponsorName%2CLeadSponsorClass%2CCollaboratorName%2CCollaboratorClass%2CCondition%2CConditionMeshTerm%2CInterventionName%2CInterventionType%2CInterventionMeshTerm%2CLocationCountry%2CLocationFacility%2CLocationCity%2COverallOfficialName%2COverallOfficialAffiliation%2CSex&query.cond=lupus&pageToken=ZVNj7o2Elu8o3lpwS9785unumpOQJJxtY_Cg2v0YkA"
+          ]
+        }
+      ],
+      "trials_analyzed": 1668,
+      "notes": [],
+      "warnings": [],
+      "source": "clinicaltrials.gov",
+      "source_api": "https://clinicaltrials.gov/api/v2/studies",
+      "generated_at": "2026-10-07T08:23:47.551942Z",
+      "timing_ms": {
+        "planning": 1219,
+        "fetch": 1407,
+        "aggregate": 94,
+        "total": 2722
+      }
+    }
+  }
+}

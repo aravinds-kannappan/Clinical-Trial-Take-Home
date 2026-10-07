@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clinical Trials Visualizer</title>
+<meta name="description" content="Demo frontend for the ClinicalTrials.gov query-to-visualization agent">
+<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-tooltip@0.34.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0"></script>
+<style>
+  :root{--bg:#f6f7f9;--card:#fff;--ink:#17202a;--muted:#5b6670;--line:#e3e7eb;--accent:#1f6feb;--accent-ink:#fff;--warn:#b35c00;--warn-bg:#fff5e6;--note-bg:#eef4ff;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1317;--card:#171c22;--ink:#e6ebf0;--muted:#9aa6b2;--line:#2a323b;--accent:#4c8dff;--warn:#ffb866;--warn-bg:#2b2010;--note-bg:#15233a}}
+  *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  header{padding:18px 16px 8px;max-width:1200px;margin:0 auto}h1{font-size:20px;margin:0 0 4px}header p{margin:0;color:var(--muted)}
+  main{max-width:1200px;margin:0 auto;padding:0 16px 40px;display:grid;gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+  label{display:block;font-size:12px;color:var(--muted);margin-bottom:3px}
+  input,select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--ink);font:inherit}
+  textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--ink);font:inherit;min-height:52px;resize:vertical}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:10px}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+  button{padding:9px 16px;border:0;border-radius:7px;background:var(--accent);color:var(--accent-ink);font:inherit;font-weight:600;cursor:pointer}button[disabled]{opacity:.5;cursor:wait}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.chip{padding:5px 10px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font-size:12.5px;cursor:pointer}.chip:hover{border-color:var(--accent)}
+  .status{color:var(--muted);font-size:13px}.err{color:#c0392b}
+  .results{display:grid;grid-template-columns:minmax(0,2fr) minmax(280px,1fr);gap:14px}@media(max-width:900px){.results{grid-template-columns:1fr}}
+  #chart{width:100%;min-height:380px}#chart svg{max-width:100%}
+  h2{font-size:17px;margin:0 0 2px}.sub{color:var(--muted);font-size:13px;margin:0 0 10px}
+  .tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:10px}.tab{padding:6px 10px;border:0;background:transparent;color:var(--muted);font:inherit;cursor:pointer;border-bottom:2px solid transparent}.tab.on{color:var(--ink);border-bottom-color:var(--accent)}
+  pre{margin:0;max-height:520px;overflow:auto;font:12px/1.4 var(--mono);background:var(--bg);padding:10px;border-radius:7px;white-space:pre-wrap;word-break:break-word}
+  .note{background:var(--note-bg);border-radius:7px;padding:8px 10px;font-size:13px;margin-top:6px}.warn{background:var(--warn-bg);color:var(--warn);border-radius:7px;padding:8px 10px;font-size:13px;margin-top:6px}
+  .cite{border-top:1px solid var(--line);padding:8px 0}.cite a{color:var(--accent);font-weight:600;text-decoration:none}.cite .t{font-size:13px;margin:2px 0}.ev{font:12px var(--mono);color:var(--muted);word-break:break-all}.ev b{color:var(--ink);font-weight:600}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:13px}.kv span:first-child{color:var(--muted)}
+  .legend{display:flex;gap:12px;font-size:12px;color:var(--muted);margin:4px 0}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle}
+</style>
+</head>
+<body>
+<header>
+  <h1>ClinicalTrials.gov question → visualization</h1>
+  <p>Ask a question; the backend plans a query, pulls live ClinicalTrials.gov data, and returns a cited chart spec. Click any bar, point, node, or country to see the trials behind it.</p>
+</header>
+<main>
+  <section class="card">
+    <label for="q">Question</label>
+    <textarea id="q" placeholder="e.g. How has the number of trials for pembrolizumab changed per year since 2015?"></textarea>
+    <div class="chips" id="chips"></div>
+    <div class="grid">
+      <div><label>Drug name</label><input id="drug_name" placeholder="optional"></div>
+      <div><label>Condition</label><input id="condition" placeholder="optional"></div>
+      <div><label>Sponsor</label><input id="sponsor" placeholder="optional"></div>
+      <div><label>Country</label><input id="country" placeholder="optional"></div>
+      <div><label>Phase</label><select id="trial_phase"><option value="">any</option><option>Early Phase 1</option><option>Phase 1</option><option>Phase 1/Phase 2</option><option>Phase 2</option><option>Phase 2/Phase 3</option><option>Phase 3</option><option>Phase 4</option><option>Not Applicable</option></select></div>
+      <div><label>Status</label><select id="status"><option value="">any</option><option>RECRUITING</option><option>NOT_YET_RECRUITING</option><option>ACTIVE_NOT_RECRUITING</option><option>COMPLETED</option><option>TERMINATED</option><option>WITHDRAWN</option></select></div>
+      <div><label>Start year ≥</label><input id="start_year" type="number" placeholder="e.g. 2015"></div>
+      <div><label>Start year ≤</label><input id="end_year" type="number" placeholder="e.g. 2025"></div>
+      <div><label>Max trials / cohort</label><input id="max_trials" type="number" value="1000" min="50" max="5000"></div>
+      <div><label>Planner</label><select id="planner"><option value="auto">auto (LLM if configured)</option><option value="llm">llm</option><option value="rules">rules</option></select></div>
+      <div><label>API base URL</label><input id="base" placeholder="same origin"></div>
+    </div>
+    <div class="row"><button id="run">Visualize</button><span class="status" id="status"></span></div>
+  </section>
+
+  <section class="results" id="results" hidden>
+    <div class="card">
+      <h2 id="title"></h2><p class="sub" id="subtitle"></p>
+      <div class="legend" id="legend"></div>
+      <div id="chart"></div>
+      <div id="notes"></div>
+    </div>
+    <div class="card">
+      <div class="tabs"><button class="tab on" data-tab="cites">Citations</button><button class="tab" data-tab="plan">Plan &amp; meta</button><button class="tab" data-tab="raw">Raw JSON</button></div>
+      <div id="tab-cites"><p class="status" id="cite-hint">Click a datum in the chart to list the ClinicalTrials.gov records that support it.</p><div id="cites"></div></div>
+      <div id="tab-plan" hidden><div class="kv" id="kv"></div><pre id="plan"></pre></div>
+      <div id="tab-raw" hidden><pre id="raw"></pre></div>
+    </div>
+  </section>
+</main>
+<script>
+const EXAMPLES = [
+  "How has the number of trials for pembrolizumab changed per year since 2015?",
+  "How are lupus trials distributed across phases?",
+  "Compare phases for trials involving pembrolizumab vs nivolumab.",
+  "Which countries have the most recruiting trials for lupus?",
+  "Show a network of sponsors ↔ drugs for breast cancer trials.",
+  "Which drugs frequently co-occur in combination studies for melanoma?",
+  "Enrollment vs start year for phase 3 pembrolizumab trials",
+  "How large are trials for Alzheimer's disease?",
+];
+const $ = id => document.getElementById(id);
+const chips = $("chips");
+EXAMPLES.forEach(q => { const b = document.createElement("button"); b.className = "chip"; b.textContent = q; b.onclick = () => { $("q").value = q; run(); }; chips.appendChild(b); });
+document.querySelectorAll(".tab").forEach(t => t.onclick = () => { document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t)); ["cites","plan","raw"].forEach(k => $("tab-"+k).hidden = k !== t.dataset.tab); });
+$("run").onclick = run;
+$("q").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); run(); } });
+try { const u = new URL(location.href); if (u.searchParams.get("q")) { $("q").value = u.searchParams.get("q"); } } catch (e) {}
+
+function payload() {
+  const p = { query: $("q").value.trim() };
+  for (const k of ["drug_name","condition","sponsor","country","trial_phase","status"]) { const v = $(k).value.trim(); if (v) p[k] = v; }
+  for (const k of ["start_year","end_year","max_trials"]) { const v = $(k).value; if (v) p[k] = Number(v); }
+  p.planner = $("planner").value;
+  return p;
+}
+
+let lastResponse = null;
+async function run() {
+  const body = payload();
+  if (body.query.length < 3) { setStatus("Type a question first.", true); return; }
+  const base = $("base").value.trim().replace(/\/$/, "");
+  $("run").disabled = true; setStatus("Planning and fetching from ClinicalTrials.gov…");
+  const t0 = performance.now();
+  try {
+    const r = await fetch(base + "/v1/visualize", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    const json = await r.json();
+    if (!r.ok) { setStatus((json.error && (json.error.code + ": " + json.error.message)) || JSON.stringify(json.detail || json), true); return; }
+    lastResponse = json; render(json);
+    setStatus(`Done in ${Math.round(performance.now() - t0)} ms · planner: ${json.meta.planner_used}${json.meta.llm_model ? " (" + json.meta.llm_model + ")" : ""} · ${json.meta.trials_analyzed} trials analysed`);
+  } catch (e) { setStatus("Request failed: " + e.message, true); }
+  finally { $("run").disabled = false; }
+}
+function setStatus(msg, isErr) { const s = $("status"); s.textContent = msg; s.className = "status" + (isErr ? " err" : ""); }
+
+function render(resp) {
+  const viz = resp.visualization, meta = resp.meta;
+  $("results").hidden = false;
+  $("title").textContent = viz.title; $("subtitle").textContent = viz.subtitle || "";
+  $("notes").innerHTML = meta.notes.map(n => `<div class="note">${esc(n)}</div>`).join("") + meta.warnings.map(w => `<div class="warn">${esc(w)}</div>`).join("");
+  $("kv").innerHTML = [["Intent", meta.intent], ["Planner", meta.planner_used + (meta.llm_model ? " · " + meta.llm_model : "")], ["Trials analysed", meta.trials_analyzed], ["Cohorts", meta.cohorts.map(c => `${c.label}: ${c.trials_analyzed}/${c.total_matched}`).join(" · ")], ["Timing", Object.entries(meta.timing_ms).map(([k,v]) => k + " " + v + "ms").join(", ")]].map(([k,v]) => `<span>${k}</span><span>${esc(String(v))}</span>`).join("");
+  $("plan").textContent = JSON.stringify({ plan: meta.plan, cohorts: meta.cohorts }, null, 2);
+  $("raw").textContent = JSON.stringify(resp, null, 2);
+  $("cites").innerHTML = ""; $("cite-hint").hidden = false; $("legend").innerHTML = "";
+  const chart = $("chart"); chart.innerHTML = "";
+  const t = viz.type;
+  if (t === "network_graph") return renderNetwork(viz);
+  if (t === "choropleth_map") return renderMap(viz);
+  return renderVegaLite(viz);
+}
+
+
+async function embed(spec) {
+  const el = $("chart"); el.innerHTML = "";
+  if (spec.width === "container") spec.width = Math.max(320, el.clientWidth - 20);
+  const runtime = vega.parse(vegaLite.compile(spec).spec);
+  const view = new vega.View(runtime, { renderer: "svg", container: el, hover: true });
+  try { view.tooltip(new vegaTooltip.Handler({ theme: matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light" }).call); } catch (e) {}
+  await view.runAsync();
+  return { view };
+}
+function vlBase(viz) {
+  return { $schema: "https://vega-lite.github.io/schema/v5/schema.json", width: "container", height: 360, background: null, config: { axis: { labelColor: "#8a949e", titleColor: "#8a949e", gridColor: "#8a949e22" }, legend: { labelColor: "#8a949e", titleColor: "#8a949e" }, view: { stroke: null } }, data: { values: viz.data.map((d, i) => ({ ...d, _i: i })) } };
+}
+function renderVegaLite(viz) {
+  const e = viz.encoding, t = viz.type, spec = vlBase(viz);
+  const y = { field: e.y.field, type: "quantitative", title: e.y.title + (e.y.unit ? ` (${e.y.unit})` : "") };
+  const tip = (e.tooltip || []).map(f => ({ field: f }));
+  if (t === "bar_chart") {
+    spec.mark = { type: "bar", cornerRadiusEnd: 3, cursor: "pointer" };
+    spec.encoding = { x: { field: e.x.field, type: "nominal", title: e.x.title, sort: null, axis: { labelAngle: -30, labelLimit: 160 } }, y, tooltip: tip, color: { value: "#1f6feb" } };
+  } else if (t === "grouped_bar_chart") {
+    spec.mark = { type: "bar", cornerRadiusEnd: 3, cursor: "pointer" };
+    spec.encoding = { x: { field: e.x.field, type: "nominal", title: e.x.title, sort: null, axis: { labelAngle: -30 } }, xOffset: { field: e.series.field, sort: viz.config.series_order }, y, color: { field: e.series.field, type: "nominal", title: e.series.title, sort: viz.config.series_order }, tooltip: tip };
+  } else if (t === "time_series") {
+    spec.mark = { type: "line", point: { size: 60, filled: true }, cursor: "pointer" };
+    spec.encoding = { x: { field: e.x.field, type: "temporal", title: e.x.title + " (" + viz.config.time_granularity + ")" }, y, tooltip: tip };
+    if (viz.data.some(d => d.series)) spec.encoding.color = { field: "series", type: "nominal" };
+  } else if (t === "scatter_plot") {
+    spec.mark = { type: "circle", size: 70, opacity: .7, cursor: "pointer" };
+    spec.encoding = { x: { field: e.x.field, type: "quantitative", title: e.x.title, scale: { zero: false } }, y: { field: e.y.field, type: "quantitative", title: e.y.title, scale: viz.config.y_scale === "log" ? { type: "symlog" } : {} }, tooltip: tip };
+    if (e.color) spec.encoding.color = { field: e.color.field, type: "nominal", title: e.color.title };
+  } else if (t === "histogram") {
+    spec.mark = { type: "bar", cursor: "pointer" };
+    spec.encoding = { x: { field: e.x.label_field, type: "ordinal", title: e.x.title + (viz.config.scale === "log10" ? " · log10 bins" : ""), sort: null, axis: { labelAngle: -30 } }, y: { field: e.y.field, type: "quantitative", title: e.y.title }, tooltip: tip, color: { value: "#1f6feb" } };
+  }
+  embed(spec).then(res => {
+    res.view.addEventListener("click", (ev, item) => { if (item && item.datum && item.datum._i !== undefined) showCitations(viz.data[item.datum._i], labelOf(viz.data[item.datum._i])); });
+  });
+}
+function renderMap(viz) {
+  const spec = vlBase(viz); spec.height = 420;
+  spec.data = { url: "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json", format: { type: "topojson", feature: "countries" } };
+  spec.projection = { type: "equalEarth" };
+  spec.transform = [{ lookup: "id", from: { data: { values: viz.data.map((d, i) => ({ ...d, _i: i })) }, key: "iso_numeric", fields: ["country", "value", "_i", "citation_count"] } }];
+  spec.mark = { type: "geoshape", stroke: "#8a949e55", strokeWidth: .4, cursor: "pointer" };
+  spec.encoding = { color: { field: "value", type: "quantitative", title: viz.encoding.color.title, scale: { scheme: "blues" }, condition: { test: "!isValid(datum.value)", value: "#8a949e22" } }, tooltip: [{ field: "country" }, { field: "value", title: viz.encoding.color.title }, { field: "citation_count" }] };
+  embed(spec).then(res => {
+    res.view.addEventListener("click", (ev, item) => { if (item && item.datum && item.datum._i !== undefined) showCitations(viz.data[item.datum._i], viz.data[item.datum._i].country); });
+  });
+  const unresolved = viz.data.filter(d => !d.iso3);
+  if (unresolved.length) $("notes").insertAdjacentHTML("beforeend", `<div class="warn">Not on map (no ISO code): ${unresolved.map(d => esc(d.country) + " (" + d.value + ")").join(", ")}</div>`);
+  $("legend").innerHTML = viz.data.slice(0, 8).map(d => `<span>${esc(d.country)}: <b>${d.value}</b></span>`).join("");
+}
+function renderNetwork(viz) {
+  const chart = $("chart"), W = chart.clientWidth || 800, H = 460;
+  const types = viz.config.node_types, palette = ["#1f6feb", "#e8590c", "#2f9e44", "#9c36b5"];
+  const color = t => palette[Math.max(0, types.indexOf(t)) % palette.length];
+  $("legend").innerHTML = types.map(t => `<span><i class="dot" style="background:${color(t)}"></i>${t}</span>`).join("") + `<span>${viz.data.nodes.length} nodes · ${viz.data.edges.length} edges · edge width = co-occurring trials</span>`;
+  const nodes = viz.data.nodes.map(n => ({ ...n })), links = viz.data.edges.map(e => ({ ...e }));
+  const svg = d3.select(chart).append("svg").attr("viewBox", [0, 0, W, H]).attr("width", "100%").attr("height", H);
+  const g = svg.append("g");
+  svg.call(d3.zoom().scaleExtent([.4, 4]).on("zoom", ev => g.attr("transform", ev.transform)));
+  const wScale = d3.scaleSqrt().domain([1, d3.max(links, l => l.weight) || 1]).range([1, 7]);
+  const rScale = d3.scaleSqrt().domain([1, d3.max(nodes, n => n.weight) || 1]).range([5, 22]);
+  const link = g.append("g").selectAll("line").data(links).join("line").attr("stroke", "#8a949e").attr("stroke-opacity", .5).attr("stroke-width", l => wScale(l.weight)).style("cursor", "pointer")
+    .on("click", (ev, l) => showCitations(l, `${nameOf(l.source)} — ${nameOf(l.target)} (${l.weight} shared trials)`));
+  const node = g.append("g").selectAll("circle").data(nodes).join("circle").attr("r", n => rScale(n.weight)).attr("fill", n => color(n.type)).attr("stroke", "#fff").attr("stroke-width", 1.2).style("cursor", "pointer")
+    .on("click", (ev, n) => showCitations(n, `${n.label} (${n.type}, ${n.weight} trials)`))
+    .call(d3.drag().on("start", (ev, d) => { if (!ev.active) sim.alphaTarget(.3).restart(); d.fx = d.x; d.fy = d.y; }).on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on("end", (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = d.fy = null; }));
+  node.append("title").text(n => `${n.label}\n${n.type} · ${n.weight} trials`);
+  const label = g.append("g").selectAll("text").data(nodes).join("text").text(n => n.label.length > 28 ? n.label.slice(0, 26) + "…" : n.label).attr("font-size", 10).attr("fill", "#8a949e").attr("dx", n => rScale(n.weight) + 3).attr("dy", 4);
+  const sim = d3.forceSimulation(nodes).force("link", d3.forceLink(links).id(d => d.id).distance(l => 60 + 40 / Math.sqrt(l.weight))).force("charge", d3.forceManyBody().strength(-180)).force("center", d3.forceCenter(W / 2, H / 2)).force("collide", d3.forceCollide(n => rScale(n.weight) + 6));
+  sim.on("tick", () => { link.attr("x1", l => l.source.x).attr("y1", l => l.source.y).attr("x2", l => l.target.x).attr("y2", l => l.target.y); node.attr("cx", n => n.x).attr("cy", n => n.y); label.attr("x", n => n.x).attr("y", n => n.y); });
+  function nameOf(n) { return typeof n === "object" ? n.label : n; }
+}
+function labelOf(d) { return d.category ? (d.series ? d.series + " · " : "") + d.category : d.period || d.country || d.bin_label || d.nct_id || ""; }
+function showCitations(datum, label) {
+  $("cite-hint").hidden = true;
+  const total = datum.citation_count, shown = datum.citations.length;
+  $("cites").innerHTML = `<p><b>${esc(label)}</b><br><span class="status">${total} supporting trial${total === 1 ? "" : "s"}${datum.citations_truncated ? ` (showing ${shown}; raise max_citations_per_datum for more)` : ""}</span></p>` +
+    datum.citations.map(c => `<div class="cite"><a href="${c.url}" target="_blank" rel="noopener">${c.nct_id}</a><div class="t">${esc(c.title)}</div>${c.evidence.map(e => `<div class="ev"><b>${esc(e.field)}</b> = ${esc(e.excerpt)}</div>`).join("")}</div>`).join("");
+  document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.tab === "cites")); ["cites","plan","raw"].forEach(k => $("tab-"+k).hidden = k !== "cites");
+}
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+</script>
+</body>
+</html>

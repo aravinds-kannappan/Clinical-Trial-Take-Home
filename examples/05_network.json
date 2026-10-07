@@ -1,0 +1,2494 @@
+{
+  "request": {
+    "planner": "auto",
+    "max_citations_per_datum": 5,
+    "query": "Show a network of sponsors ↔ drugs for breast cancer trials.",
+    "status": "RECRUITING",
+    "max_trials": 1000
+  },
+  "status_code": 200,
+  "response": {
+    "visualization": {
+      "type": "network_graph",
+      "title": "Sponsor ↔ Drug / intervention network for breast cancer",
+      "subtitle": "I am showing a bipartite network of sponsors and drugs (interventions) for breast cancer trials that are currently recruiting.",
+      "encoding": {
+        "nodes": {
+          "id": "id",
+          "label": "label",
+          "group": "type",
+          "size": "weight",
+          "size_title": "Trials mentioning entity"
+        },
+        "edges": {
+          "source": "source",
+          "target": "target",
+          "weight": "weight",
+          "weight_title": "Trials with both entities"
+        },
+        "tooltip": [
+          "label",
+          "type",
+          "weight",
+          "citation_count"
+        ]
+      },
+      "data": {
+        "nodes": [
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07471776",
+                "title": "Study on Using TROP2-PET and 18F-FDG PET to Predict the Efficacy of Anti TROP2 ADC Treatment in Advanced Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07471776",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07647016",
+                "title": "Trastuzumab Deruxtecan Plus ivonescImab for Hormone Receptor-positive HER2 Negative Advanced Breast Cancer Study",
+                "url": "https://clinicaltrials.gov/study/NCT07647016",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05512286",
+                "title": "Patient-Reported Outcome and Safety Between Preoperative and Postmastectomy Radiotherapy in DIEP Flap Reconstruction",
+                "url": "https://clinicaltrials.gov/study/NCT05512286",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04790305",
+                "title": "Effect of Huaier Granule on Adjuvant Treatment for High-risk Early-stage Triple-negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT04790305",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04025164",
+                "title": "Hypofractionated Vs Conventional Fractionated Radiotherapy After Breast Conserving Surgery",
+                "url": "https://clinicaltrials.gov/study/NCT04025164",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 32,
+            "citations_truncated": true,
+            "id": "sponsor:Fudan University",
+            "label": "Fudan University",
+            "type": "sponsor",
+            "weight": 32.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06841354",
+                "title": "A Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) as Monotherapy and in Combination With Pembrolizumab (MK-3475) in Participants With Triple-Negative Breast Cancer (MK-2870-011/TroFuse-011)",
+                "url": "https://clinicaltrials.gov/study/NCT06841354",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[6].name",
+                    "excerpt": "Carboplatin"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06966700",
+                "title": "A Clinical Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) in People With Breast Cancer (MK-2870-032)",
+                "url": "https://clinicaltrials.gov/study/NCT06966700",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "Carboplatin"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05638594",
+                "title": "Pyrotinib Combined With Trastuzumab, Dalpiciclib, Letrozole Versus TCbHP (Trastuzumab Plus Pertuzumab With Docetaxel and Carboplatin) as Neoadjuvant Treatment in HR +/HER2 + Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05638594",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[6].name",
+                    "excerpt": "Carboplatin"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07046923",
+                "title": "A Study of LY4175408 in Participants With Advanced Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07046923",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Carboplatin"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07017673",
+                "title": "Phase II Trial of Ivonescimab in Combination With Carboplatin + Docetaxel in Patients With Early-Stage Triple Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07017673",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Carboplatin"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 25,
+            "citations_truncated": true,
+            "id": "intervention:carboplatin",
+            "label": "Carboplatin",
+            "type": "intervention",
+            "weight": 25.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05181033",
+                "title": "Lenvatinib+Letrozole Versus Fulvestrant in Metastatic ER+/HER2- Breast Cancer, Post Progression on Al + CDK4/6 Inhibitor",
+                "url": "https://clinicaltrials.gov/study/NCT05181033",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Fulvestrant"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05536128",
+                "title": "Evaluating the Efficacy and Safety of Fulvestrant Plus DNA Damage Repair Inhibitors After a CDK4/6 Inhibitor",
+                "url": "https://clinicaltrials.gov/study/NCT05536128",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Fulvestrant"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06756932",
+                "title": "BGB-21447 (Bcl-2 Inhibitor) Combinations for Adults With Hormone-Receptor Positive (HR+)/Human Epidermal Growth Factor Receptor 2 Negative (HER2-) Metastatic Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06756932",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Fulvestrant"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07558733",
+                "title": "Sapanisertib and Serabelisib (PIKTOR) in Various Combinations in Patients With HR+/HER2- Advanced/Metastatic Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07558733",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Fulvestrant"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05608252",
+                "title": "VS-6766+Abema+Fulv in Met HR+/HER- BC",
+                "url": "https://clinicaltrials.gov/study/NCT05608252",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Fulvestrant"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 25,
+            "citations_truncated": true,
+            "id": "intervention:fulvestrant",
+            "label": "Fulvestrant",
+            "type": "intervention",
+            "weight": 25.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT02896335",
+                "title": "Palbociclib and Pembrolizumab In Central Nervous System Metastases",
+                "url": "https://clinicaltrials.gov/study/NCT02896335",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT03971045",
+                "title": "Pembrolizumab and Oral Metronomic Cyclophosphamide in Patients With Chest Wall Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT03971045",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06841354",
+                "title": "A Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) as Monotherapy and in Combination With Pembrolizumab (MK-3475) in Participants With Triple-Negative Breast Cancer (MK-2870-011/TroFuse-011)",
+                "url": "https://clinicaltrials.gov/study/NCT06841354",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06966700",
+                "title": "A Clinical Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) in People With Breast Cancer (MK-2870-032)",
+                "url": "https://clinicaltrials.gov/study/NCT06966700",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07046923",
+                "title": "A Study of LY4175408 in Participants With Advanced Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07046923",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 24,
+            "citations_truncated": true,
+            "id": "intervention:pembrolizumab",
+            "label": "Pembrolizumab",
+            "type": "intervention",
+            "weight": 24.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06966700",
+                "title": "A Clinical Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) in People With Breast Cancer (MK-2870-032)",
+                "url": "https://clinicaltrials.gov/study/NCT06966700",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[7].name",
+                    "excerpt": "Cyclophosphamide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07297667",
+                "title": "GCAR1, a Chimeric Antigen Receptor (CAR) T-CELL Therapy for Relapsed/Refractory GPNMB-Expressing Solid Tumours",
+                "url": "https://clinicaltrials.gov/study/NCT07297667",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Cyclophosphamide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07523529",
+                "title": "Biomarker-Guided Dual-Target CAR-T Cells for Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT07523529",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Cyclophosphamide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05883852",
+                "title": "EC-THP Versus TCbHP in HER2-positive Lymph Node Positive Early Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05883852",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[5].name",
+                    "excerpt": "cyclophosphamide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04771871",
+                "title": "MicroRNA Profiles in Triple Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT04771871",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Cyclophosphamide"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 19,
+            "citations_truncated": true,
+            "id": "intervention:cyclophosphamide",
+            "label": "Cyclophosphamide",
+            "type": "intervention",
+            "weight": 19.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT04169542",
+                "title": "Impact of COVID-19 Pandemic on Out-of-Pocket Costs, Lost Wages, and Unemployment in Patients With Breast Cancer Undergoing Breast Surgery",
+                "url": "https://clinicaltrials.gov/study/NCT04169542",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05774678",
+                "title": "Trial Of PreoperAtive Radiation (TOPAz): A Randomized Trial Comparing Hypofractionated Versus Conventionally Fractionated Preoperative Radiation Followed by Mastectomy With Immediate Autologous Breast Reconstruction With Integrated Tissue Nanomechanical Phenotype Evaluation",
+                "url": "https://clinicaltrials.gov/study/NCT05774678",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06885203",
+                "title": "Social and Environmental Determinants of Breast Cancer Survivorship: the Black Breast Cancer Survivor's Intervention (BBCSI)",
+                "url": "https://clinicaltrials.gov/study/NCT06885203",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT03941756",
+                "title": "Lymphovenous Bypass Procedure Before Underarm Lymph Node Surgery in Preventing Lymphedema in Patients With Inflammatory or Locally Advanced Non-inflammatory Breast Cancer or Melanoma",
+                "url": "https://clinicaltrials.gov/study/NCT03941756",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT00477100",
+                "title": "Biospecimen and Medical Data Collection and Tumor Biopsy in Creating Research Tissue Registry in Patients With Inflammatory or Invasive Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT00477100",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 18,
+            "citations_truncated": true,
+            "id": "sponsor:M.D. Anderson Cancer Center",
+            "label": "M.D. Anderson Cancer Center",
+            "type": "sponsor",
+            "weight": 18.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07768436",
+                "title": "A Study of Cyclophosphamide, Methotrexate, Fluorouracil (CMF) for People With Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07768436",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Memorial Sloan Kettering Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05837767",
+                "title": "A Study of Radiation Therapy to Treat Solid Tumor Cancer That Has Spread to Soft Tissue",
+                "url": "https://clinicaltrials.gov/study/NCT05837767",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Memorial Sloan Kettering Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05910294",
+                "title": "A Study to Prevent and Improve Sexual Health Concerns for People With Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05910294",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Memorial Sloan Kettering Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05570253",
+                "title": "A Study of SDX-7320 in Combination With Eribulin for People With Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05570253",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Memorial Sloan Kettering Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT00823654",
+                "title": "Serum Biomarkers to Characterize the Effects of Therapy on Ovarian Reserve in Premenopausal Women With Early-stage Breast Cancer or BRCA Mutations",
+                "url": "https://clinicaltrials.gov/study/NCT00823654",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Memorial Sloan Kettering Cancer Center"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 18,
+            "citations_truncated": true,
+            "id": "sponsor:Memorial Sloan Kettering Cancer Center",
+            "label": "Memorial Sloan Kettering Cancer Center",
+            "type": "sponsor",
+            "weight": 18.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07095023",
+                "title": "Neoadjuvant Oral Paclitaxel Plus Subcutaneous Pertuzumab/Trastuzumab in Patients With HER2-positive Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07095023",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07257809",
+                "title": "Herombopag Treated T-DM1 Induced Platelet Reduction",
+                "url": "https://clinicaltrials.gov/study/NCT07257809",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07796880",
+                "title": "Neoadjuvant Culmerciclib Combined With Endocrine Therapy for Hormone Receptor-Positive， Human Epidermal Growth Factor Receptor 2-Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07796880",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05953350",
+                "title": "A Phase Ib/II Study Confirmed Inhibition of Autophagy Synergizes Anti-tumor Effect of High Dose CDK4/6i",
+                "url": "https://clinicaltrials.gov/study/NCT05953350",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04803539",
+                "title": "A Prospective, Phase II Trial Using ctDNA to Initiate Post-operation Boost Therapy After Adjuvant Chemotherapy in TNBC",
+                "url": "https://clinicaltrials.gov/study/NCT04803539",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 18,
+            "citations_truncated": true,
+            "id": "sponsor:Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University",
+            "label": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University",
+            "type": "sponsor",
+            "weight": 18.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05325632",
+                "title": "Study of HER2 Directed Dendritic Cell (DC1) Vaccine + Weekly Paclitaxel, Trastuzumab & Pertuzumab",
+                "url": "https://clinicaltrials.gov/study/NCT05325632",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Trastuzumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06686394",
+                "title": "Study of Patritumab Deruxtecan With Other Anticancer Agents in Participants With HER2 Positive Breast Cancer That Has Spread and Cannot Be Surgically Removed (MK-1022-009)",
+                "url": "https://clinicaltrials.gov/study/NCT06686394",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Trastuzumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06016387",
+                "title": "Tucatinib, Trastuzumab and Capecitabine With Brain and/or Spinal Radiotherapy (XRT) in Patients With HER2+, HER2 Mutated and/or HER2-amplified Metastatic Breast Cancer and Leptomeningeal Disease: A Multi-centre Phase II, Single Arm Feasibility Study",
+                "url": "https://clinicaltrials.gov/study/NCT06016387",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Trastuzumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07335081",
+                "title": "ctDNA in HER2+ EBC Neoadjuvant Treatment",
+                "url": "https://clinicaltrials.gov/study/NCT07335081",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "trastuzumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05638594",
+                "title": "Pyrotinib Combined With Trastuzumab, Dalpiciclib, Letrozole Versus TCbHP (Trastuzumab Plus Pertuzumab With Docetaxel and Carboplatin) as Neoadjuvant Treatment in HR +/HER2 + Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05638594",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Trastuzumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 18,
+            "citations_truncated": true,
+            "id": "intervention:trastuzumab",
+            "label": "Trastuzumab",
+            "type": "intervention",
+            "weight": 18.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT04895709",
+                "title": "A Study of BMS-986340 as Monotherapy and as Combination Therapy in Participants With Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT04895709",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Docetaxel"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07335081",
+                "title": "ctDNA in HER2+ EBC Neoadjuvant Treatment",
+                "url": "https://clinicaltrials.gov/study/NCT07335081",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "docetaxel"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05638594",
+                "title": "Pyrotinib Combined With Trastuzumab, Dalpiciclib, Letrozole Versus TCbHP (Trastuzumab Plus Pertuzumab With Docetaxel and Carboplatin) as Neoadjuvant Treatment in HR +/HER2 + Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05638594",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[5].name",
+                    "excerpt": "Docetaxel"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07017673",
+                "title": "Phase II Trial of Ivonescimab in Combination With Carboplatin + Docetaxel in Patients With Early-Stage Triple Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07017673",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Docetaxel"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07402473",
+                "title": "Optimize Neoadjuvant Therapy in HER2-Positive Early-Stage Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07402473",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Docetaxel"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 17,
+            "citations_truncated": true,
+            "id": "intervention:docetaxel",
+            "label": "Docetaxel",
+            "type": "intervention",
+            "weight": 17.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06841354",
+                "title": "A Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) as Monotherapy and in Combination With Pembrolizumab (MK-3475) in Participants With Triple-Negative Breast Cancer (MK-2870-011/TroFuse-011)",
+                "url": "https://clinicaltrials.gov/study/NCT06841354",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "Paclitaxel"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06966700",
+                "title": "A Clinical Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) in People With Breast Cancer (MK-2870-032)",
+                "url": "https://clinicaltrials.gov/study/NCT06966700",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[4].name",
+                    "excerpt": "Paclitaxel"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05325632",
+                "title": "Study of HER2 Directed Dendritic Cell (DC1) Vaccine + Weekly Paclitaxel, Trastuzumab & Pertuzumab",
+                "url": "https://clinicaltrials.gov/study/NCT05325632",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "Paclitaxel"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07768436",
+                "title": "A Study of Cyclophosphamide, Methotrexate, Fluorouracil (CMF) for People With Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07768436",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Paclitaxel"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06976944",
+                "title": "Pembrolizumab + Paclitaxel +/- Bevacizumab for Triple-negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06976944",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Paclitaxel"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 17,
+            "citations_truncated": true,
+            "id": "intervention:paclitaxel",
+            "label": "Paclitaxel",
+            "type": "intervention",
+            "weight": 17.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06966700",
+                "title": "A Clinical Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) in People With Breast Cancer (MK-2870-032)",
+                "url": "https://clinicaltrials.gov/study/NCT06966700",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[8].name",
+                    "excerpt": "Capecitabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06016387",
+                "title": "Tucatinib, Trastuzumab and Capecitabine With Brain and/or Spinal Radiotherapy (XRT) in Patients With HER2+, HER2 Mutated and/or HER2-amplified Metastatic Breast Cancer and Leptomeningeal Disease: A Multi-centre Phase II, Single Arm Feasibility Study",
+                "url": "https://clinicaltrials.gov/study/NCT06016387",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Capecitabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04803539",
+                "title": "A Prospective, Phase II Trial Using ctDNA to Initiate Post-operation Boost Therapy After Adjuvant Chemotherapy in TNBC",
+                "url": "https://clinicaltrials.gov/study/NCT04803539",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "capecitabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07652242",
+                "title": "Phase 1 Study of a Self-amplifying RNA Vaccine (ITI-5000) in Stage 2-3 Triple Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07652242",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[4].name",
+                    "excerpt": "Capecitabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07222215",
+                "title": "PhII Randomized CAPecitabine + ELAcestrant vs. Capecitabine Alone in ER+ Breast Cancer (CAPELA)",
+                "url": "https://clinicaltrials.gov/study/NCT07222215",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Capecitabine"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 16,
+            "citations_truncated": true,
+            "id": "intervention:capecitabine",
+            "label": "Capecitabine",
+            "type": "intervention",
+            "weight": 16.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07610720",
+                "title": "Dalpiciclib, Anti-HER2 Therapy, and Endocrine Therapy for Hormone-Receptor-Positive, HER2-Positive Metastatic Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07610720",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Pertuzumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05325632",
+                "title": "Study of HER2 Directed Dendritic Cell (DC1) Vaccine + Weekly Paclitaxel, Trastuzumab & Pertuzumab",
+                "url": "https://clinicaltrials.gov/study/NCT05325632",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Pertuzumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06686394",
+                "title": "Study of Patritumab Deruxtecan With Other Anticancer Agents in Participants With HER2 Positive Breast Cancer That Has Spread and Cannot Be Surgically Removed (MK-1022-009)",
+                "url": "https://clinicaltrials.gov/study/NCT06686394",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "Pertuzumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07335081",
+                "title": "ctDNA in HER2+ EBC Neoadjuvant Treatment",
+                "url": "https://clinicaltrials.gov/study/NCT07335081",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "pertuzumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05638594",
+                "title": "Pyrotinib Combined With Trastuzumab, Dalpiciclib, Letrozole Versus TCbHP (Trastuzumab Plus Pertuzumab With Docetaxel and Carboplatin) as Neoadjuvant Treatment in HR +/HER2 + Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05638594",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[4].name",
+                    "excerpt": "Pertuzumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 16,
+            "citations_truncated": true,
+            "id": "intervention:pertuzumab",
+            "label": "Pertuzumab",
+            "type": "intervention",
+            "weight": 16.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05704283",
+                "title": "3D Ultrasound for the Imaging of Lymph Nodes in Patients With Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05704283",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Mayo Clinic"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05557877",
+                "title": "Low Dose Aspirin for the Prevention of Postpartum Related Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05557877",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Mayo Clinic"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06401889",
+                "title": "Enhancing Skin Appearance and Quality of Life in Breast Cancer Survivors on Aromatase Inhibitor Therapy",
+                "url": "https://clinicaltrials.gov/study/NCT06401889",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Mayo Clinic"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06153836",
+                "title": "Neurotization of the Nipple Areolar Complex to Restore Sensation for Patients With Breast Cancer Undergoing Nipple Sparing Mastectomy and Reconstruction",
+                "url": "https://clinicaltrials.gov/study/NCT06153836",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Mayo Clinic"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06635980",
+                "title": "Hypofractionated Radiotherapy Before or After Breast Surgery for Treatment of Patients With Non-Metastatic Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06635980",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Mayo Clinic"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 15,
+            "citations_truncated": true,
+            "id": "sponsor:Mayo Clinic",
+            "label": "Mayo Clinic",
+            "type": "sponsor",
+            "weight": 15.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06930859",
+                "title": "Non-interventional Study to Assess the Effectiveness and Safety of Ribociclib in the Adjuvant Therapy of Hormone Receptor Positive (HR+) HER2-negative Stage II and III Breast Cancer in Real Clinical Practice in Russia",
+                "url": "https://clinicaltrials.gov/study/NCT06930859",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Ribociclib"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04802759",
+                "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Participants With Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT04802759",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[4].name",
+                    "excerpt": "Ribociclib"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07647328",
+                "title": "A Phase IIIb Study to Evaluate Camizestrant Plus Ribociclib in ER-positive, HER2-negative Advanced Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07647328",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Ribociclib"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05467891",
+                "title": "Ribociclib And Endocrine Treatment of Physician's Choice for Locoregional Recurrent, Resected Hormone Receptor Positive HER2 Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05467891",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Ribociclib"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05683418",
+                "title": "A Study to Evaluate the Safety and Tolerability of TOS-358 in Women With HR+ HER2- Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05683418",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "Ribociclib"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 13,
+            "citations_truncated": true,
+            "id": "intervention:ribociclib",
+            "label": "Ribociclib",
+            "type": "intervention",
+            "weight": 13.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05095207",
+                "title": "Abemaciclib in Combination With Bicalutamide for Androgen Receptor-positive, HER2-negative Metastatic Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05095207",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Abemaciclib"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04802759",
+                "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Participants With Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT04802759",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Abemaciclib"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05608252",
+                "title": "VS-6766+Abema+Fulv in Met HR+/HER- BC",
+                "url": "https://clinicaltrials.gov/study/NCT05608252",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Abemaciclib"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05735080",
+                "title": "Open-Label Study to Evaluate the Safety, Tolerability, PK, and Efficacy of INX-315 in Patients With Advanced Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05735080",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Abemaciclib"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06805812",
+                "title": "Predicting clinicAL outcoMes During First-line CDK4/6 Inhibitors Plus Endocrine Therapy in Patients With Advanced Hormone REceptor-poSitive HER2-negative Breast Cancer: the Retrospective-prospective Multicenter Italian PALMARES-2 Study",
+                "url": "https://clinicaltrials.gov/study/NCT06805812",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Abemaciclib"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 12,
+            "citations_truncated": true,
+            "id": "intervention:abemaciclib",
+            "label": "Abemaciclib",
+            "type": "intervention",
+            "weight": 12.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07537699",
+                "title": "Auricular Point Stimulation Plus Dexamethasone for Nausea and Vomiting Caused by Docetaxel Plus Cyclophosphamide",
+                "url": "https://clinicaltrials.gov/study/NCT07537699",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07716176",
+                "title": "Auricular Point Stimulation Plus Dexamethasone Versus Standard Antiemetic Regimen for Nausea and Vomiting Caused by Docetaxel Plus Cyclophosphamide",
+                "url": "https://clinicaltrials.gov/study/NCT07716176",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07304934",
+                "title": "A Prospective Multicenter Study of the TuFEst-LN Model for Axillary Lymph Node Status Assessment in Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07304934",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05731258",
+                "title": "Observational of Adjuvant Treatment of Breast Cancer With Liposomal Doxorubicin Regimen",
+                "url": "https://clinicaltrials.gov/study/NCT05731258",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04960839",
+                "title": "Prophylactic Irradiation to the Contralateral Breast for BCAs Patients",
+                "url": "https://clinicaltrials.gov/study/NCT04960839",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 11,
+            "citations_truncated": true,
+            "id": "sponsor:Second Affiliated Hospital, Zhejiang University, School of Medicine",
+            "label": "Second Affiliated Hospital, Zhejiang University, School of Medicine",
+            "type": "sponsor",
+            "weight": 11.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT03971045",
+                "title": "Pembrolizumab and Oral Metronomic Cyclophosphamide in Patients With Chest Wall Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT03971045",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "European Institute of Oncology"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06706570",
+                "title": "PIK3CA Mutational Status Assessment",
+                "url": "https://clinicaltrials.gov/study/NCT06706570",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "European Institute of Oncology"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06723990",
+                "title": "Evaluation of HER2DX Assay on Treatment Decisions in Patients With Early Stage HER2+ Breast Cancer: the HER2BREASTDX",
+                "url": "https://clinicaltrials.gov/study/NCT06723990",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "European Institute of Oncology"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07080944",
+                "title": "Sentinel Lymph Node Biopsy After Neoadjuvant Chemotherapy in IBC",
+                "url": "https://clinicaltrials.gov/study/NCT07080944",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "European Institute of Oncology"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06281210",
+                "title": "Vabb After Neoadjuvant Therapy to Avoid Surgery-pCR to Avoid Breast Surgery",
+                "url": "https://clinicaltrials.gov/study/NCT06281210",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "European Institute of Oncology"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 10,
+            "citations_truncated": true,
+            "id": "sponsor:European Institute of Oncology",
+            "label": "European Institute of Oncology",
+            "type": "sponsor",
+            "weight": 10.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07619534",
+                "title": "Collection of CSF Samples From Participants With Metastatic Triple Negative Breast Cancer (TNBC) and HER2+ Breast Cancer With no Prior History Nor Active Radiographically Detectable Brain Metastases",
+                "url": "https://clinicaltrials.gov/study/NCT07619534",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "National Cancer Institute (NCI)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT00451022",
+                "title": "Follow-Up Study of Subjects Previously Enrolled in Poxviral Vector Gene Transfer Studies",
+                "url": "https://clinicaltrials.gov/study/NCT00451022",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "National Cancer Institute (NCI)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06058377",
+                "title": "Adding an Immunotherapy Drug, MEDI4736 (Durvalumab), to the Usual Chemotherapy Treatment (Paclitaxel, Cyclophosphamide, and Doxorubicin) for Stage II-III Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06058377",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "National Cancer Institute (NCI)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT00034216",
+                "title": "Collection of Blood From Patients With Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT00034216",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "National Cancer Institute (NCI)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT01441089",
+                "title": "Collection of Blood From Patients With Cancer, Other Tumors, or Tumor Predisposition Syndromes for Genetic Analysis",
+                "url": "https://clinicaltrials.gov/study/NCT01441089",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "National Cancer Institute (NCI)"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 9,
+            "citations_truncated": true,
+            "id": "sponsor:National Cancer Institute (NCI)",
+            "label": "National Cancer Institute (NCI)",
+            "type": "sponsor",
+            "weight": 9.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05977036",
+                "title": "BettER: Biomarker Driven Early Therapeutic Selection in Patients With HR+ HER2- Metastatic or Unresectable Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05977036",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Washington University School of Medicine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07277738",
+                "title": "Precision Supplemental Imaging in Women With Dense Breasts",
+                "url": "https://clinicaltrials.gov/study/NCT07277738",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Washington University School of Medicine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05505643",
+                "title": "Cryoablation vs Lumpectomy in T1 Breast Cancers",
+                "url": "https://clinicaltrials.gov/study/NCT05505643",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Washington University School of Medicine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04968964",
+                "title": "Treatment Monitoring of Patients Receiving CDK 4/6 Inhibitors for Hormone Receptor (HR) Positive, HER2 Negative Metastatic Breast Cancer (MBC) With or Without the Addition of DiviTum® Serum Thymidine Kinase 1 (TK1) Activity Testing",
+                "url": "https://clinicaltrials.gov/study/NCT04968964",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Washington University School of Medicine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05837455",
+                "title": "NeoTAILOR: ABiomarker-directed Approach to Guide Neoadjuvant Therapy for Patients With Stage II/III ER-positive, HER2-negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05837455",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Washington University School of Medicine"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 9,
+            "citations_truncated": true,
+            "id": "sponsor:Washington University School of Medicine",
+            "label": "Washington University School of Medicine",
+            "type": "sponsor",
+            "weight": 9.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07647328",
+                "title": "A Phase IIIb Study to Evaluate Camizestrant Plus Ribociclib in ER-positive, HER2-negative Advanced Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07647328",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05877599",
+                "title": "A Study of NT-175 in Adult Participants With Advanced Malignancies That Are Positive for HLA-A*02:01 and the TP53 R175H Mutation",
+                "url": "https://clinicaltrials.gov/study/NCT05877599",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06727227",
+                "title": "Real-world Study of Trastuzumab Deruxtecan in Patients With Unresectable or Metastatic HER2-low Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06727227",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06417801",
+                "title": "Minimally Interventional Study on Prevalence of Emerging ESR1 Mutations in Liquid Biopsy in Three Cohorts of Patients With Breast Cancer in Comparison With Patient's Baseline ESR1 Mutation Status as Defined by Tissue Profiling.",
+                "url": "https://clinicaltrials.gov/study/NCT06417801",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05417594",
+                "title": "Study of AZD9574 as Monotherapy and in Combination With Anti-cancer Agents in Participants With Advanced Solid Malignancies",
+                "url": "https://clinicaltrials.gov/study/NCT05417594",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 8,
+            "citations_truncated": true,
+            "id": "sponsor:AstraZeneca",
+            "label": "AstraZeneca",
+            "type": "sponsor",
+            "weight": 8.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07482384",
+                "title": "Supporting Health Including Endocrine Treatment for Long Duration",
+                "url": "https://clinicaltrials.gov/study/NCT07482384",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Dana-Farber Cancer Institute"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05225428",
+                "title": "Video Education With Result Dependent dIsclosure",
+                "url": "https://clinicaltrials.gov/study/NCT05225428",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Dana-Farber Cancer Institute"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06488378",
+                "title": "Phase Ib Study of Axatilimab in Combination With Olaparib in BRCA1/2 and PALB2- Associated Metastatic HER2-negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06488378",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Dana-Farber Cancer Institute"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05463796",
+                "title": "InAdvance: Surveillance, Prevention, and Interception in a Population at Risk for Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05463796",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Dana-Farber Cancer Institute"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05535192",
+                "title": "TeleHealth Resistance Exercise Intervention to Preserve Dose Intensity and Vitality in Elder Breast Cancer Patients",
+                "url": "https://clinicaltrials.gov/study/NCT05535192",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Dana-Farber Cancer Institute"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 8,
+            "citations_truncated": true,
+            "id": "sponsor:Dana-Farber Cancer Institute",
+            "label": "Dana-Farber Cancer Institute",
+            "type": "sponsor",
+            "weight": 8.0
+          }
+        ],
+        "edges": [
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07647328",
+                "title": "A Phase IIIb Study to Evaluate Camizestrant Plus Ribociclib in ER-positive, HER2-negative Advanced Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07647328",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Ribociclib"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06188520",
+                "title": "A First-in-human Dose Escalation and Expansion Study to Evaluate the Safety, and Tolerability of AZD8421 Alone or in Combination in Participants With Selected Advanced or Metastatic Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT06188520",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Ribociclib"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 2,
+            "citations_truncated": false,
+            "source": "sponsor:AstraZeneca",
+            "target": "intervention:ribociclib",
+            "weight": 2.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT04803539",
+                "title": "A Prospective, Phase II Trial Using ctDNA to Initiate Post-operation Boost Therapy After Adjuvant Chemotherapy in TNBC",
+                "url": "https://clinicaltrials.gov/study/NCT04803539",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "capecitabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06992336",
+                "title": "Circulating Tumor DNA Guided Boost Therapy in Early Triple Negative Breast Patients With Residual Disease After Neoadjuvant Therapy",
+                "url": "https://clinicaltrials.gov/study/NCT06992336",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Capecitabine"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 2,
+            "citations_truncated": false,
+            "source": "sponsor:Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University",
+            "target": "intervention:capecitabine",
+            "weight": 2.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06188520",
+                "title": "A First-in-human Dose Escalation and Expansion Study to Evaluate the Safety, and Tolerability of AZD8421 Alone or in Combination in Participants With Selected Advanced or Metastatic Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT06188520",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[4].name",
+                    "excerpt": "Abemaciclib"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:AstraZeneca",
+            "target": "intervention:abemaciclib",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06103864",
+                "title": "A Phase III Study of Dato-DXd With or Without Durvalumab Compared With Investigator's Choice of Chemotherapy in Combination With Pembrolizumab in Patients With PD-L1 Positive Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer (TROPION-Breast05)",
+                "url": "https://clinicaltrials.gov/study/NCT06103864",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[5].name",
+                    "excerpt": "Carboplatin"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:AstraZeneca",
+            "target": "intervention:carboplatin",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06103864",
+                "title": "A Phase III Study of Dato-DXd With or Without Durvalumab Compared With Investigator's Choice of Chemotherapy in Combination With Pembrolizumab in Patients With PD-L1 Positive Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer (TROPION-Breast05)",
+                "url": "https://clinicaltrials.gov/study/NCT06103864",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Paclitaxel"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:AstraZeneca",
+            "target": "intervention:paclitaxel",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06103864",
+                "title": "A Phase III Study of Dato-DXd With or Without Durvalumab Compared With Investigator's Choice of Chemotherapy in Combination With Pembrolizumab in Patients With PD-L1 Positive Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer (TROPION-Breast05)",
+                "url": "https://clinicaltrials.gov/study/NCT06103864",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "AstraZeneca"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[6].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:AstraZeneca",
+            "target": "intervention:pembrolizumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT04468061",
+                "title": "Sacituzumab Govitecan +/- Pembrolizumab in Metastatic TNBC",
+                "url": "https://clinicaltrials.gov/study/NCT04468061",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Dana-Farber Cancer Institute"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Dana-Farber Cancer Institute",
+            "target": "intervention:pembrolizumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT03971045",
+                "title": "Pembrolizumab and Oral Metronomic Cyclophosphamide in Patients With Chest Wall Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT03971045",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "European Institute of Oncology"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:European Institute of Oncology",
+            "target": "intervention:pembrolizumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06787339",
+                "title": "Capecitabine in Low Risk Triple Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06787339",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Capecitabine"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Fudan University",
+            "target": "intervention:capecitabine",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05883852",
+                "title": "EC-THP Versus TCbHP in HER2-positive Lymph Node Positive Early Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05883852",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "carboplatin"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Fudan University",
+            "target": "intervention:carboplatin",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05883852",
+                "title": "EC-THP Versus TCbHP in HER2-positive Lymph Node Positive Early Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05883852",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[5].name",
+                    "excerpt": "cyclophosphamide"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Fudan University",
+            "target": "intervention:cyclophosphamide",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05883852",
+                "title": "EC-THP Versus TCbHP in HER2-positive Lymph Node Positive Early Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05883852",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Docetaxel"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Fudan University",
+            "target": "intervention:docetaxel",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07666555",
+                "title": "A Phase II Clinical Study of the Efficacy and Safety of Culmerciclib Rechallenge in HR-positive, HER2-negative Breast Cancer Patients With Resistance to First-line Endocrine Therapy.",
+                "url": "https://clinicaltrials.gov/study/NCT07666555",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Fulvestrant"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Fudan University",
+            "target": "intervention:fulvestrant",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05883852",
+                "title": "EC-THP Versus TCbHP in HER2-positive Lymph Node Positive Early Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05883852",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "Pertuzumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Fudan University",
+            "target": "intervention:pertuzumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05883852",
+                "title": "EC-THP Versus TCbHP in HER2-positive Lymph Node Positive Early Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05883852",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Fudan University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Trastuzumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Fudan University",
+            "target": "intervention:trastuzumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06318897",
+                "title": "Open-label, Single Center, Single-arm, Phase 2 Study of Neoadjuvant Pembrolizumab in Combination With Carboplatin and Paclitaxel in Patients With Stage 1 cT1b-T1cN0M0 Triple Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06318897",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "M.D. Anderson Cancer Center"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Carboplatin"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:M.D. Anderson Cancer Center",
+            "target": "intervention:carboplatin",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06318897",
+                "title": "Open-label, Single Center, Single-arm, Phase 2 Study of Neoadjuvant Pembrolizumab in Combination With Carboplatin and Paclitaxel in Patients With Stage 1 cT1b-T1cN0M0 Triple Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06318897",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "M.D. Anderson Cancer Center"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[4].name",
+                    "excerpt": "Cyclophosphamide"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:M.D. Anderson Cancer Center",
+            "target": "intervention:cyclophosphamide",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06318897",
+                "title": "Open-label, Single Center, Single-arm, Phase 2 Study of Neoadjuvant Pembrolizumab in Combination With Carboplatin and Paclitaxel in Patients With Stage 1 cT1b-T1cN0M0 Triple Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06318897",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "M.D. Anderson Cancer Center"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Paclitaxel"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:M.D. Anderson Cancer Center",
+            "target": "intervention:paclitaxel",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06318897",
+                "title": "Open-label, Single Center, Single-arm, Phase 2 Study of Neoadjuvant Pembrolizumab in Combination With Carboplatin and Paclitaxel in Patients With Stage 1 cT1b-T1cN0M0 Triple Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06318897",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "M.D. Anderson Cancer Center"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:M.D. Anderson Cancer Center",
+            "target": "intervention:pembrolizumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06525766",
+                "title": "Adaptive Therapy With Capecitabine for Treatment of Metastatic ER Positive, HER2 Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06525766",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Mayo Clinic"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Capecitabine"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Mayo Clinic",
+            "target": "intervention:capecitabine",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05269381",
+                "title": "Personalized Neoantigen Peptide-Based Vaccine in Combination With Pembrolizumab for Treatment of Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT05269381",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Mayo Clinic"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Cyclophosphamide"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Mayo Clinic",
+            "target": "intervention:cyclophosphamide",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05269381",
+                "title": "Personalized Neoantigen Peptide-Based Vaccine in Combination With Pembrolizumab for Treatment of Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT05269381",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Mayo Clinic"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Mayo Clinic",
+            "target": "intervention:pembrolizumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06678269",
+                "title": "A Study of Abemaciclib and Radiation Therapy in People With Metastatic Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06678269",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Memorial Sloan Kettering Cancer Center"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Abemaciclib"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Memorial Sloan Kettering Cancer Center",
+            "target": "intervention:abemaciclib",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT07768436",
+                "title": "A Study of Cyclophosphamide, Methotrexate, Fluorouracil (CMF) for People With Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT07768436",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Memorial Sloan Kettering Cancer Center"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Paclitaxel"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Memorial Sloan Kettering Cancer Center",
+            "target": "intervention:paclitaxel",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05372640",
+                "title": "Testing the Safety and Efficacy of the Combination of Two Anti-cancer Drugs, ZEN003694 and Abemaciclib, for Adult and Pediatric Patients (12-17 Years) With Metastatic or Unresectable NUT Carcinoma, Breast Cancer and Other Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT05372640",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "National Cancer Institute (NCI)"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Abemaciclib"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:National Cancer Institute (NCI)",
+            "target": "intervention:abemaciclib",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06058377",
+                "title": "Adding an Immunotherapy Drug, MEDI4736 (Durvalumab), to the Usual Chemotherapy Treatment (Paclitaxel, Cyclophosphamide, and Doxorubicin) for Stage II-III Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06058377",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "National Cancer Institute (NCI)"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Cyclophosphamide"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:National Cancer Institute (NCI)",
+            "target": "intervention:cyclophosphamide",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06058377",
+                "title": "Adding an Immunotherapy Drug, MEDI4736 (Durvalumab), to the Usual Chemotherapy Treatment (Paclitaxel, Cyclophosphamide, and Doxorubicin) for Stage II-III Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06058377",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "National Cancer Institute (NCI)"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[6].name",
+                    "excerpt": "Paclitaxel"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:National Cancer Institute (NCI)",
+            "target": "intervention:paclitaxel",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05422794",
+                "title": "Testing the Addition of Anti-Cancer Drug, ZEN003694 (ZEN-3694) and PD-1 Inhibitor (Pembrolizumab), to Standard Chemotherapy (Nab-Paclitaxel) Treatment in Patients With Advanced Triple-Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05422794",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "National Cancer Institute (NCI)"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[6].name",
+                    "excerpt": "Pembrolizumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:National Cancer Institute (NCI)",
+            "target": "intervention:pembrolizumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05420467",
+                "title": "A Study for the Adjuvant Treatment of Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05420467",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "excerpt": "Carboplatin"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Second Affiliated Hospital, Zhejiang University, School of Medicine",
+            "target": "intervention:carboplatin",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05420467",
+                "title": "A Study for the Adjuvant Treatment of Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05420467",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[6].name",
+                    "excerpt": "Cyclophosphamide"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Second Affiliated Hospital, Zhejiang University, School of Medicine",
+            "target": "intervention:cyclophosphamide",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05420467",
+                "title": "A Study for the Adjuvant Treatment of Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05420467",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Docetaxel"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Second Affiliated Hospital, Zhejiang University, School of Medicine",
+            "target": "intervention:docetaxel",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05420467",
+                "title": "A Study for the Adjuvant Treatment of Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05420467",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "Pertuzumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Second Affiliated Hospital, Zhejiang University, School of Medicine",
+            "target": "intervention:pertuzumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06587789",
+                "title": "Ribociclib in Combination With Adjuvant Endocrine Therapy for Patients With Early High-risk HR+HER2- Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06587789",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "excerpt": "Ribociclib"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Second Affiliated Hospital, Zhejiang University, School of Medicine",
+            "target": "intervention:ribociclib",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT05420467",
+                "title": "A Study for the Adjuvant Treatment of Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05420467",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Second Affiliated Hospital, Zhejiang University, School of Medicine"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "Trastuzumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Second Affiliated Hospital, Zhejiang University, School of Medicine",
+            "target": "intervention:trastuzumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06121570",
+                "title": "Phase I Study of Autologous Tumor-Draining Lymph Node-Derived Lymphocytes as Neoadjuvant Therapy for HER2-Negative Breast Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06121570",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "Cyclophosphamide"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University",
+            "target": "intervention:cyclophosphamide",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06278870",
+                "title": "Disitamab Vedotin + Pyrotinib Versus THP in the First-line Treatment for HER2+ Advanced Breast Cancer Clinical Trial",
+                "url": "https://clinicaltrials.gov/study/NCT06278870",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "excerpt": "Pertuzumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University",
+            "target": "intervention:pertuzumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT06278870",
+                "title": "Disitamab Vedotin + Pyrotinib Versus THP in the First-line Treatment for HER2+ Advanced Breast Cancer Clinical Trial",
+                "url": "https://clinicaltrials.gov/study/NCT06278870",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "excerpt": "trastuzumab"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University",
+            "target": "intervention:trastuzumab",
+            "weight": 1.0
+          },
+          {
+            "citations": [
+              {
+                "nct_id": "NCT02476786",
+                "title": "Endocrine Treatment Alone for Elderly Patients With Estrogen Receptor Positive Operable Breast Cancer and Low Recurrence Score",
+                "url": "https://clinicaltrials.gov/study/NCT02476786",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "excerpt": "Washington University School of Medicine"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[4].name",
+                    "excerpt": "Fulvestrant"
+                  }
+                ]
+              }
+            ],
+            "citation_count": 1,
+            "citations_truncated": false,
+            "source": "sponsor:Washington University School of Medicine",
+            "target": "intervention:fulvestrant",
+            "weight": 1.0
+          }
+        ]
+      },
+      "config": {
+        "measure": "trial_count",
+        "unit": "trials",
+        "node_types": [
+          "sponsor",
+          "intervention"
+        ],
+        "bipartite": true,
+        "min_edge_weight": 1,
+        "max_nodes": 25,
+        "layout": "force_directed"
+      }
+    },
+    "meta": {
+      "intent": "relationship",
+      "planner_used": "llm",
+      "llm_model": "gpt-4.1",
+      "plan": {
+        "analysis": "relationship",
+        "cohorts": [
+          {
+            "label": "Breast cancer, recruiting trials",
+            "filters": {
+              "condition": "breast cancer",
+              "statuses": [
+                "RECRUITING"
+              ]
+            }
+          }
+        ],
+        "measure": "trial_count",
+        "time_field": "start_date",
+        "granularity": "year",
+        "network": {
+          "node_types": [
+            "sponsor",
+            "intervention"
+          ],
+          "min_edge_weight": 1,
+          "max_nodes": 25
+        },
+        "sort": "natural",
+        "interpretation": "I am showing a bipartite network of sponsors and drugs (interventions) for breast cancer trials that are currently recruiting."
+      },
+      "cohorts": [
+        {
+          "label": "Breast cancer, recruiting trials",
+          "filters_applied": {
+            "condition": "breast cancer",
+            "statuses": [
+              "RECRUITING"
+            ]
+          },
+          "total_matched": 2441,
+          "trials_analyzed": 1000,
+          "truncated": true,
+          "api_requests": [
+            "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=1000&countTotal=true&fields=NCTId%2CBriefTitle%2COverallStatus%2CStartDate%2CPrimaryCompletionDate%2CCompletionDate%2CStudyFirstPostDate%2CPhase%2CStudyType%2CDesignAllocation%2CDesignPrimaryPurpose%2CEnrollmentCount%2CEnrollmentType%2CLeadSponsorName%2CLeadSponsorClass%2CCollaboratorName%2CCollaboratorClass%2CCondition%2CConditionMeshTerm%2CInterventionName%2CInterventionType%2CInterventionMeshTerm%2CLocationCountry%2CLocationFacility%2CLocationCity%2COverallOfficialName%2COverallOfficialAffiliation%2CSex&query.cond=breast+cancer&filter.overallStatus=RECRUITING"
+          ]
+        }
+      ],
+      "trials_analyzed": 1000,
+      "notes": [
+        "Structured request fields applied to every cohort: status.",
+        "Node weight = trials mentioning the entity; edge weight = trials in which both entities appear together. Placebo-like arms are excluded."
+      ],
+      "warnings": [
+        "Cohort 'Breast cancer, recruiting trials': 2441 studies match but only the first 1000 were analysed (max_trials). Raise max_trials for complete coverage."
+      ],
+      "source": "clinicaltrials.gov",
+      "source_api": "https://clinicaltrials.gov/api/v2/studies",
+      "generated_at": "2026-10-07T08:23:56.489338Z",
+      "timing_ms": {
+        "planning": 1336,
+        "fetch": 763,
+        "aggregate": 94,
+        "total": 2193
+      }
+    }
+  }
+}
